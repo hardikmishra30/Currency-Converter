@@ -1,0 +1,15 @@
+Steps to Reproduce:
+
+Step 1. 
+So basically in this folder, we are going to learn about Custom Hooks and more on the UI components. We will understand the concepts of hooks from basic like how to create a customized hook and use it in the project. In the previois folder we learned about the useCallback, and about two to three more hooks. 
+
+Step 2. 
+
+Step 3. 
+
+Step 4. 
+
+Step 5. 
+
+Step 6. 
+

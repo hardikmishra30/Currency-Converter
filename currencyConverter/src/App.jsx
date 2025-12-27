@@ -4,10 +4,10 @@ import useCurrencyInfo from "./hooks/useCurrencyInfo";
 import { AiOutlineArrowRight } from 'react-icons/ai'
 
 function App() {
-  const [amount, setAmount] = useState(0); // This will hold the amount entered by the user
+  const [amount, setAmount] = useState(); // This will hold the amount entered by the user
   const [from, setFrom] = useState("usd"); // Default currencies set to USD and INR
   const [to, setTo] = useState("inr"); // Default currencies set to USD and INR
-  const [convertedAmount, setConvertedAmount] = useState(0); // This will hold the converted amount
+  const [convertedAmount, setConvertedAmount] = useState(); // This will hold the converted amount
 
   const currencyInfo = useCurrencyInfo(from); // Fetch currency information based on the 'from' currency
 
@@ -72,7 +72,7 @@ function App() {
               type="submit"
               className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg"
             >
-              Convert {from.toUpperCase()} to {to.toUpperCase()} <AiOutlineArrowRight className="inline-block ml-2 mb-1"/>
+              Convert {from.toUpperCase()} to {to.toUpperCase()} <AiOutlineArrowRight className="inline-block ml-2 mb-1" />
             </button>
           </form>
         </div>
